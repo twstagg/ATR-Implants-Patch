@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<!-- Biotech -->
+
+	<Operation Class="PatchOperationReplace" MayRequire="ludeon.rimworld.biotech">
+		<xpath>/Defs/ThingDef[defName="Mechlink"]/description</xpath> 
+		<value>
+			<description>A bionic implant that allows direct control of mechanoids. Mechlinks are used by soldiers to control war mechs, and by workers to control labor mechs. A being with a mechlink is known as a mechanitor.\n\nMechlinks are self-installable. Pressed into the back of the neck, the unit injects itself to clamp inside the base of the cranium where it meets the nervous system. There, it threads a web of ultrafine wires throughout nearby neuronal tissue to make the direct mental link between the user and the mechanoid control band.\n\nMechlinks are not simply devices for sending radio signals to mechanoids, because mechanoids are not merely robots. In addition to traditional computers, mechanoids have a dim psychic presence, so fluently controlling them requires a psychic connection. By linking mechanitor and mechanoid both psychically and electromagnetically, the mechlink permits deeper control than screen-and-button interfaces.\n\nSince the mechlink interlaces deep within the brain tissue, it can only be removed after death.\n\nNote: A mechanitor must be capable of smithing work to gestate mechanoids.</description>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace" MayRequire="ludeon.rimworld.biotech">
+		<xpath>/Defs/ThingDef[defName="MechlinkImplant"]/description</xpath> 
+		<value>
+			<description>A bionic implant that allows direct control of mechanoids. Mechlinks are used by soldiers to control war mechs, and by workers to control labor mechs. A being with a mechlink is known as a mechanitor.\n\nMechlinks are self-installable. Pressed into the back of the neck, the unit injects itself to clamp inside the base of the cranium where it meets the nervous system. There, it threads a web of ultrafine wires throughout nearby neuronal tissue to make the direct mental link between the user and the mechanoid control band.\n\nMechlinks are not simply devices for sending radio signals to mechanoids, because mechanoids are not merely robots. In addition to traditional computers, mechanoids have a dim psychic presence, so fluently controlling them requires a psychic connection. By linking mechanitor and mechanoid both psychically and electromagnetically, the mechlink permits deeper control than screen-and-button interfaces.\n\nSince the mechlink interlaces deep within the brain tissue, it can only be removed after death.\n\nNote: A mechanitor must be capable of smithing work to gestate mechanoids.</description>
+		</value>
+	</Operation>
+
+</Patch>

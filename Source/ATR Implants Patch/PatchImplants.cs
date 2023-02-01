@@ -8,7 +8,6 @@ namespace ATR_Implants_Patch
     public static class PatchImplants
     {
         public static string ATR_BrainShortLabel = "artificial brain";
-        public static string humanBrain = "brain";
         static PatchImplants()
         {
             new Harmony("twsta.ATRImplantsPatch").PatchAll();
@@ -39,12 +38,11 @@ namespace ATR_Implants_Patch
         {
             public static void Postfix(ref Pawn p, ref string failReason, ref bool __result)
             {
-                BodyPartDef getPawnBrain = p.health.hediffSet.GetBrain().def;
-                string psychicallyDeaf = (string)"InstallImplantPsychicallyDeaf".Translate();                                               // Set strings that the game expects to be used for the context menu
-                string noBodyPart = (string)("InstallImplantNoBodyPart".Translate() + ": " + humanBrain);
+                BodyPartDef getPawnBrain = p.health.hediffSet.GetBrain().def;                                                               // Set strings that the game expects to be used for the context menu
+                string noBodyPart = (string)("InstallImplantNoBodyPart".Translate() + ": " + "brain");
                 if (__result == false)                                                                                                      // If CanBeUsedBy() returned false,
                 {
-                    if ((getPawnBrain.LabelShort == ATR_BrainShortLabel) && (failReason == psychicallyDeaf || failReason == noBodyPart))    // and pawn is Android or is failing due to "stock" limitations,
+                    if (getPawnBrain.LabelShort == ATR_BrainShortLabel && failReason == noBodyPart)                                         // and pawn is Android or is failing due to "stock" limitations,
                     {
                         __result = true;                                                                                                    // allow the Android pawn to install Mechlink implant.
                     }
