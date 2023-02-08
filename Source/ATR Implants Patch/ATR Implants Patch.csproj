@@ -7,8 +7,8 @@
     <ProjectGuid>{68C9478F-96D1-4CC8-B483-7B9007419BD8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ATR_Mechlink_Patch</RootNamespace>
-    <AssemblyName>ATR Mechlink Patch</AssemblyName>
+    <RootNamespace>ATR_Implants_Patch</RootNamespace>
+    <AssemblyName>ATR Implants Patch</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
