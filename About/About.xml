@@ -14,16 +14,11 @@
 			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
 			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
 		</li>
-		<li>
-			<packageId>killathon.androidtiersreforged</packageId>
-			<displayName>Android Tiers Reforged</displayName>
-			<steamWorkshopUrl>steam://url/CommunityFilePage/2917948202</steamWorkshopUrl>
-			<downloadUrl>https://github.com/RWDevathon/Android-Tiers-Reforged</downloadUrl>
-		</li>
 	</modDependencies>
 	<loadAfter>
 		<li>brrainz.harmony</li>
 		<li>killathon.androidtiersreforged</li>
+		<li>killathon.mechhumanlikes.androidtiers</li>
 	</loadAfter>
 	<description>Patches Royalty DLC Psylink, as well as Biotech DLC Mechlink to be installable on Android pawns from Android Tiers Reforged</description>
 </ModMetaData>	
